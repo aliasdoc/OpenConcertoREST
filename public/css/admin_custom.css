@@ -1,0 +1,141 @@
+sub {
+    vertical-align: sub;
+    font-size: x-small;
+}
+
+/* Content header */
+.skin-black .content-header {
+    background: rgb(250, 250, 250);
+    box-shadow: none;
+}
+
+.content-header {
+    position: relative;
+    padding: 15px 15px 15px 15px;
+}
+/* ./Content header */
+/* System panel */
+.system-panel {
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #1a2226;
+}
+
+.skin-black .system-panel > .info, .skin-black .user-panel > .info > a {
+    color:#fff;
+}
+
+.system-panel > .info {
+    padding:0px 0px 0px 15px;
+    line-height:1;
+    position:absolute;
+    left:55px;
+}
+
+.system-panel > .info > p {
+    font-weight:600;
+    margin-bottom:0px;
+}
+
+.system-panel > .info > a {
+    text-decoration:none;
+    padding-right:5px;
+    margin-top:0px;
+    font-size:11px;
+}
+
+/* ./ System panel */
+.dt-body-center {
+    text-align: center;
+}
+
+/* Font ico (Font-Awesome) */
+.elastic-fai-xl{
+    font-size:80px;
+}
+.elastic-fai-lg{
+    font-size:50px;
+}
+.elastic-fai-md{
+    font-size:40px;
+}
+.elastic-fai-sm{
+    font-size:30px;
+}
+.elastic-fai-xs{
+    font-size:20px;
+}
+/* Extra small devices */
+@media(max-width:544px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-xs{
+        font-size:20px;
+    }
+}
+/* Small devices */
+@media(min-width:544px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-sm{
+        font-size:30px;
+    }
+}
+/* Medium devices */
+@media(min-width:768px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-md{
+        font-size:40px;
+    }
+}
+/* Large devices */
+@media(min-width:992px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-lg{
+        font-size:50px;
+    }
+}
+/* Exrta Large devices */
+@media(min-width:1200px){
+    .elastic-fai-group > .elastic-fai, .elastic-fai-xl{
+        font-size:80px;
+    }
+}
+/* ./Font ico (Font-Awesome) */
+/* Datatable */
+td.details-control {
+    position: relative;
+    cursor: pointer;
+}
+td.details-control:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f196";
+}
+tr.shown td.details-control {
+    position: relative;
+}
+tr.shown td.details-control:before {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    content: "\f147";
+}
+
+.row-details {
+    padding: 30px;
+    background-color: #ecf0f5;
+}
+/* ./Datatable */
+
+   .input-block-level {
+       display: block;
+       width: 100%;
+       min-height: 28px;        // Make inputs at least the height of their button counterpart
+   .box-sizing(border-box); // Makes inputs behave like true block-level elements
+   }
